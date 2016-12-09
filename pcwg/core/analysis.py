@@ -379,7 +379,7 @@ class Analysis:
             Status.add("Turbulence Correction Complete.")
 
             if self.hasActualPower:
-                self.allMeasuredTurbCorrectedPowerCurve = self.calculateMeasuredPowerCurve(self.get_base_filter(), self.cutInWindSpeed, self.cutOutWindSpeed, self.ratedPower, self.measuredTurbulencePower, 'Turbulence Corrected', zero_ti_pc_required = False)
+                self.allMeasuredTurbCorrectedPowerCurve = self.calculateMeasuredPowerCurve(self.get_base_filter, self.cutInWindSpeed, self.cutOutWindSpeed, self.ratedPower, self.measuredTurbulencePower, 'Turbulence Corrected', zero_ti_pc_required = False)
 
         if config.turbRenormActive and config.rewsActive:
             Status.add("Calculating Combined (REWS + Turbulence) Correction...")
